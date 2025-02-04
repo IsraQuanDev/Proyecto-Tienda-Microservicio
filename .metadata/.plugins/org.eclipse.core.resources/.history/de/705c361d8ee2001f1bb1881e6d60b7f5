@@ -1,0 +1,23 @@
+
+#NOMBRE DEL MS 
+spring.application.name=API-GATEWAY server.port=9000 
+
+#CONFIGURACION DEL DISCOVERY SERVER 
+#SE HABILITA EL REGISTRO / CONEXION 
+spring.cloud.gateway.discovery.locator.enabled=true 
+
+#CONFIGURACION DE LOS SERVICIOS QUE SE REGISTRARAN EN EL APIGATEWY 
+#NOMBRE DEL MICROSERVICIO O DE LA APP --- TIENDAS 
+spring.cloud.gateway.routes[0].id=MS-TIENDA 
+
+#LA RUTA O URL DEL SERVIDOR LOCAL DE NUSTRO MS 
+spring.cloud.gateway.routes[0].uri=http://localhost:8030 
+
+#PREDICADO DE LA API O MS----predicates[0]--SIEMPRE VA EN 0----NOS OBTIENE INFORMACION DE LA BASE DE DATOS---APIGATEWAY 
+spring.cloud.gateway.routes[0].predicates[0]=Path=/TiendasWs/**
+
+
+# PRODUCTOS 
+
+
+# EMPLEADOS  

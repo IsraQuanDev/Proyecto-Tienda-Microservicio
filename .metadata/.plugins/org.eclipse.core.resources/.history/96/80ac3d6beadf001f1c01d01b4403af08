@@ -1,0 +1,14 @@
+package com.mx.MsProductos.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductoServImp {
+
+	
+	// metodo para listar
+	// metodo para guardar
+	// metodo para buscarXidTienda, hacerlo con peticion get, se 
+	// se va enviar la información en la url
+	
+}

@@ -1,0 +1,36 @@
+package com.mx.MsProductos.model;
+
+import org.springframework.data.annotation.Id;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+/*
+ CREATE TABLE TIENDA_30(
+ID_TIENDA NUMBER PRIMARY KEY,
+NOMBRE VARCHAR2(100) NOT NULL,
+TIPO VARCHAR2(100) NOT NULL
+);
+ */
+
+@Entity
+@Table(name="PRODUCTOS_30")
+@Data
+public class Productos {
+
+	@Id
+	@Column(name="ID_PRODUCTO")
+	private Long idProducto;
+	
+	@Column(name="NOMBRE")
+	private String nombre;
+	
+	@Column(name ="PRECIO")
+	private Float precio;
+
+	@Column(name ="ID_TIENDA")
+	private Float idTienda;
+	
+}

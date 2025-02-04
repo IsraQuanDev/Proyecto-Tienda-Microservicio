@@ -1,0 +1,13 @@
+spring.application.name=EUREKASERVER 
+#Configurar el puertos 
+server.port = 8761 
+#Configuracion de eureka server 
+eureka.instance.hostname=localhost
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+# Habilitar eureka server
+eureka.server.enable-self-preservation=true
+
+
+

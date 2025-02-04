@@ -1,0 +1,5 @@
+package com.mx.Tienda.dto;
+
+public class EmpleadosDTO {
+
+}

@@ -1,0 +1,12 @@
+package com.mx.MsProductos.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mx.MsProductos.model.Productos;
+
+public interface ProductosDao extends JpaRepository<Productos,Long> {
+	
+	
+	
+
+}

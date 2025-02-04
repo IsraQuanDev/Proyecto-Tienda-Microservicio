@@ -1,0 +1,41 @@
+package com.mx.Tienda.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.mx.Tienda.dao.TiendasDao;
+import com.mx.Tienda.dto.ProductosDTO;
+import com.mx.Tienda.entity.Tiendas;
+import com.mx.Tienda.feingClient.IProductosFeingClient;
+
+@Service
+public class TiendaServImp {
+
+	@Autowired
+	TiendasDao tiendaDao;
+	
+	@Transactional(readOnly = true)
+	public List<Tiendas> listar(){
+		return tiendaDao.findAll();
+	}
+	
+	
+	@Transactional 
+	public Tiendas guardar(Tiendas tienda) {
+		return tiendaDao.save(tienda);
+	}
+	
+	
+	@Autowired
+	IProductosFeingClient iProductosFeingClient;
+	public ProductosDTO guardarProducto(ProductosDTO producto)
+	{
+		return iProductosFeingClient.guardar(producto);
+	}
+	
+	
+	
+}

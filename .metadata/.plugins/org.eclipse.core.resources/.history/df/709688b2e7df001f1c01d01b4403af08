@@ -1,0 +1,5 @@
+package com.mx.MsProductos.dao;
+
+public class ProductosDao {
+
+}

@@ -1,0 +1,5 @@
+package com.mx.Tienda.config;
+
+public class RestTemplateConfig {
+
+}

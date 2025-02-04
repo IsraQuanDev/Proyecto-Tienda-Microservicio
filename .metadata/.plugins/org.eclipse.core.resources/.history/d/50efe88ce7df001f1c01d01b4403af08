@@ -1,0 +1,5 @@
+package com.mx.MsProductos.model;
+
+public class Productos {
+
+}

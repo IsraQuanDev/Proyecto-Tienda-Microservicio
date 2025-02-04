@@ -1,0 +1,5 @@
+package com.mx.Tienda.dao;
+
+public class TiendasDao {
+
+}

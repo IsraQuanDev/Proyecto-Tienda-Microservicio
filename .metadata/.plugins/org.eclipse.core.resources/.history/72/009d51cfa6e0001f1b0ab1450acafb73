@@ -1,0 +1,5 @@
+package com.mx.MsEmpleados.dominio;
+
+public class Empleados {
+
+}
